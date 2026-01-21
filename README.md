@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # EmployeeAttendanceSystem
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.12.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# employee-attendance-system
+Angular Employee Attendance &amp; Leave Management System
+>>>>>>> 278929bf299b90117e4d8aa4f8510e2a542f6851
