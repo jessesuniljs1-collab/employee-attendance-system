@@ -36,8 +36,3 @@ This project is built using **Angular (standalone components)** and styled with 
 - **Styling:** CSS (Custom UI)
 - **Routing:** Angular Router
 - **Version Control:** Git & GitHub
-
----
-
-## 📁 Project Structure
-
