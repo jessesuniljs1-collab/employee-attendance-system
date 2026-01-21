@@ -1,0 +1,15 @@
+<div class="page">
+  <h2>Employees</h2>
+
+  <!-- Header row -->
+  <div class="emp-row emp-header">
+    <div class="emp-name">Employee Name</div>
+    <div class="emp-dept-header">Department</div>
+  </div>
+
+  <!-- Data rows -->
+  <div class="emp-row" *ngFor="let emp of employees">
+    <div class="emp-name">{{ emp.name }}</div>
+    <div class="emp-dept">{{ emp.department }}</div>
+  </div>
+</div>

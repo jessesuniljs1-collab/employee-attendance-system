@@ -1,0 +1,12 @@
+<div class="page">
+  <h2>Attendance</h2>
+
+  <div class="att-row" *ngFor="let emp of employees">
+    <strong style="width:120px">{{ emp.name }}</strong>
+
+   <button class="btn-present" (click)="markPresent(emp)">Present</button>
+<button class="btn-absent" (click)="markAbsent(emp)">Absent</button>
+
+    <span>{{ emp.status || 'Not Marked' }}</span>
+  </div>
+</div>

@@ -1,0 +1,287 @@
+/* =====================
+   RESET & BASE
+===================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+}
+
+/* =====================
+   HEADER
+===================== */
+.top-header {
+  background: linear-gradient(135deg, #1565c0, #1e88e5);
+  padding: 20px 40px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 12px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.top-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.top-nav a {
+  color: #e3f2fd;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.top-nav a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+}
+
+.top-nav a.active {
+  color: white;
+  border-bottom: 3px solid #ffeb3b;
+}
+
+/* =====================
+   MAIN CONTENT
+===================== */
+.main-content {
+  padding: 30px 40px;
+}
+
+/* =====================
+   DASHBOARD
+===================== */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  padding: 25px;
+  border-radius: 10px;
+  color: white;
+}
+
+.stat-card.blue {
+  background: #1e88e5;
+}
+
+.stat-card.green {
+  background: #43a047;
+}
+
+.stat-card.orange {
+  background: #fb8c00;
+}
+
+/* =====================
+   COMMON PAGE CARD
+===================== */
+.page {
+  background: white;
+  padding: 24px 28px;
+  border-radius: 12px;
+  max-width: 720px;
+  margin-top: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.page h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* =====================
+   EMPLOYEES LIST
+===================== */
+.simple-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.simple-list li {
+  padding: 14px 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.simple-list li:last-child {
+  border-bottom: none;
+}
+
+/* =====================
+   ATTENDANCE & APPROVAL
+===================== */
+.att-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.att-row:last-child {
+  border-bottom: none;
+}
+
+.att-row strong {
+  width: 120px;
+  color: #111827;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #2563eb;
+  color: white;
+}
+
+/* ===== ATTENDANCE BUTTON COLORS ===== */
+.btn-present {
+  background-color: #2e7d32; /* green */
+}
+
+.btn-absent {
+  background-color: #c62828; /* red */
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button + button {
+  margin-left: 6px;
+}
+
+/* =====================
+   FORMS
+===================== */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* ===== APPROVE LEAVE ===== */
+.leave-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.leave-row:last-child {
+  border-bottom: none;
+}
+
+.leave-info strong {
+  font-size: 16px;
+}
+
+.leave-dates {
+  font-size: 14px;
+  color: #555;
+}
+
+.leave-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-approve {
+  background-color: #2e7d32;
+}
+
+.btn-reject {
+  background-color: #c62828;
+}
+
+.leave-status {
+  font-weight: 600;
+  color: #f57c00;
+}
+
+/* ===== EMPLOYEES ===== */
+.emp-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.emp-row:last-child {
+  border-bottom: none;
+}
+
+.emp-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.emp-dept {
+  font-size: 14px;
+  color: #374151;
+  background: #e3f2fd;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+
+/* ===== EMPLOYEES HEADER ===== */
+.emp-header {
+  background: #f1f5f9;
+  font-weight: 700;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.emp-dept-header {
+  font-size: 14px;
+  color: #1f2937;
+}
+

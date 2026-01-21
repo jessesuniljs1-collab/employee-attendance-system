@@ -1,0 +1,28 @@
+<div class="page">
+  <h2>Apply Leave</h2>
+
+  <div class="form-group">
+    <label>Employee</label>
+    <select [(ngModel)]="leave.employee">
+      <option value="">Select</option>
+      <option *ngFor="let emp of employees">{{ emp }}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>From Date</label>
+    <input type="date" [(ngModel)]="leave.fromDate">
+  </div>
+
+  <div class="form-group">
+    <label>To Date</label>
+    <input type="date" [(ngModel)]="leave.toDate">
+  </div>
+
+  <div class="form-group">
+    <label>Reason</label>
+    <textarea [(ngModel)]="leave.reason"></textarea>
+  </div>
+
+  <button (click)="submitLeave()">Apply Leave</button>
+</div>

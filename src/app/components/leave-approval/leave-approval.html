@@ -1,0 +1,18 @@
+<div class="page">
+  <h2>Approve Leave</h2>
+
+  <div class="leave-row" *ngFor="let req of leaveRequests">
+    <div class="leave-info">
+      <strong>{{ req.employee }}</strong>
+      <div class="leave-dates">
+        {{ req.from }} → {{ req.to }}
+      </div>
+    </div>
+
+    <div class="leave-actions">
+      <button class="btn-approve" (click)="approve(req)">Approve</button>
+      <button class="btn-reject" (click)="reject(req)">Reject</button>
+      <span class="leave-status">{{ req.status }}</span>
+    </div>
+  </div>
+</div>
